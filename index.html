@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkPreview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>LinkPreview</h1>
+    <p class="subtitle">Paste a URL to see its Open Graph preview</p>
+
+    <form id="preview-form">
+      <div class="input-row">
+        <input
+          type="url"
+          id="url-input"
+          placeholder="https://example.com"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" id="submit-btn">Preview</button>
+      </div>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
